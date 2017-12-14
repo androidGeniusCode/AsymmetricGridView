@@ -57,6 +57,10 @@ public final class AsymmetricRecyclerViewAdapter<T extends RecyclerView.ViewHold
     return wrappedAdapter.getItemViewType(position);
   }
 
+    public AGVRecyclerViewAdapter<T> getWrappedAdapter() {
+        return wrappedAdapter;
+    }
+
   void recalculateItemsPerRow() {
     adapterImpl.recalculateItemsPerRow();
   }
